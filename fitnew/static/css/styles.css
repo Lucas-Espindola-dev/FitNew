@@ -1,11 +1,27 @@
-.main-header-container{
-backgroud-color: #7FFFD4;
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #333;
 }
 
-.topnav{
-    list-style-type: none;
-    padding: 0;
-    margin: 0;
-    overflow: hidden;
-    backgroud-color: #7FFFD4
+li {
+  float: left;
+}
+
+li a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+li a:hover:not(.topnav-main-item) {
+  background-color: #111;
+}
+
+.topnav-main-item {
+  background-color: #04AA6D;
 }
