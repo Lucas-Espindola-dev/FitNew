@@ -1,6 +1,9 @@
 from django.urls import path, include
-from fitnew.views import *
+from fitnew import views
+
+
+app_name = "fitnew"
 
 urlpatterns = [
-    path('home/', ExercisesListView.as_view(), name='home'),
+    path('home/', views.home, name='home'),
 ]
