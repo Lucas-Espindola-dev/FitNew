@@ -17,7 +17,7 @@ color: 	#000000
 .topnav {
   list-style-type: none;
   margin: 0;
-  padding: 0;
+  padding: 2rem;
   overflow: hidden;
   border: 1px solid #e7e7e7;
   background-color: #f3f3f3;
@@ -31,8 +31,9 @@ li {
   display: block;
   color: #666;
   text-align: center;
-  padding: 14px 16px;
+  padding: 18px 20px;
   text-decoration: none;
+  font-size: 1.5rem;
 }
 
 .topnav-item:hover:not(.topnav-main-item) {
