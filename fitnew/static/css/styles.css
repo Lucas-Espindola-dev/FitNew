@@ -10,8 +10,9 @@ font-size: 62.5%;
 
 body{
 font-size:1.6 rem;
-background: #A9A9A9;
-color: 	#000000
+background: #FFFFFF;
+color: 	#000000;
+font-family: Georgia, serif;
 }
 
 .topnav {
@@ -43,6 +44,7 @@ li {
 .topnav-main-item {
     color: white;
   background-color: #04AA6D;
+  font-size: 2rem;
 }
 
 .main-content-container{
@@ -50,5 +52,5 @@ li {
 }
 
 .main-home-title{
-    font-size: 40px;
+    font-size: 30px;
 }
