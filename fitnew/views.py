@@ -9,5 +9,6 @@ def home(request):
 
 class ExercisesListView(ListView):
     model = Exercises
-    context_object_name = 'pages'
+    template_name = 'fitnew/pages/exercises.html'
+    context_object_name = 'exercises'
 
