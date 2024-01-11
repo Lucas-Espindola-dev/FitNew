@@ -44,3 +44,11 @@ li {
     color: white;
   background-color: #04AA6D;
 }
+
+.main-content-container{
+    padding-top: 20px;
+}
+
+.main-home-title{
+    font-size: 40px;
+}
