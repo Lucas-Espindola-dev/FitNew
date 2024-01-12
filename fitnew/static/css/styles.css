@@ -9,7 +9,6 @@ font-size: 62.5%;
 }
 
 body{
-font-size:1.6 rem;
 background: #FFFFFF;
 color: 	#000000;
 font-family: Georgia, serif;
@@ -51,6 +50,8 @@ li {
     padding-top: 20px;
 }
 
-.main-home-title{
-    font-size: 30px;
+.main-title h1{
+font-size: 30px;
+color: green;
 }
+
