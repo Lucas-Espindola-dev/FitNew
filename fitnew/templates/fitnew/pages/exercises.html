@@ -9,10 +9,16 @@
             <a href="#">
                 <div class="exercise-line">
                     {% if exercise.photo %}
-                    <img src="">
+                    <img src="{{ exercise.photo.url }}" alt="{{exercise.muscular_group}} - {{exercise.name_exercise}}">
+                    {% else %}
+                        <p class="no-photo"> Foto não disponível </p>
+                    {% endif %}
+                    <p>{{ exercise.series }} series / {{ exercise.reps }}</p>
                 </div>
             </a>
-
-</div>
-
+    {% endfor %}
+    {% else %}
+        <p class="no-results"> Nenhum Exercício encontrado! </p>
+    {% endif %}
+    </div>
 {% endblock %}
