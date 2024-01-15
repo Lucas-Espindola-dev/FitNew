@@ -9,7 +9,7 @@ font-size: 62.5%;
 }
 
 body{
-background-image: url(https://wallpapers.com/images/featured-full/grey-5xvepms9fbbi0bmh.jpg);
+background: linear-gradient(white, gray);
 color: 	#000000;
 font-family: Georgia, serif;
 }
@@ -51,25 +51,26 @@ li {
 }
 
 .main-title h1{
-font-size: 50px;
-color: green;
+font-size: 60px;
+color: black;
 text-align: center;
 }
 
 .main-image{
-display: block;
-margin-left: auto;
+margin-left: 180px;
 margin-right: auto;
 border-radius: 4px;
-max-width: 60%;
+max-width: 100%;
 }
 
 .title-paragraph{
-font-size: 25px;
+font-size: 35px;
 text-align: center;
+padding: 15px;
 }
 
 .mission-paragraph{
 text-align: center;
-font-size: 15px;
+font-size: 20px;
+padding: 15px;
 }
