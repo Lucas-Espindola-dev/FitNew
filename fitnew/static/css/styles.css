@@ -51,8 +51,9 @@ li {
 }
 
 .main-title h1{
-font-size: 30px;
+font-size: 50px;
 color: green;
+text-align: center;
 }
 
 .main-image{
@@ -60,15 +61,15 @@ display: block;
 margin-left: auto;
 margin-right: auto;
 border-radius: 4px;
-max-width: 100%;
+max-width: 60%;
 }
 
 .title-paragraph{
-font-size: 15px;
+font-size: 25px;
 text-align: center;
 }
 
 .mission-paragraph{
 text-align: center;
-font-size: 7px;
+font-size: 15px;
 }
