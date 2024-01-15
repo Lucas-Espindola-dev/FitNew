@@ -4,6 +4,14 @@
 
 {% block content %}
 <div class="exercises-grid">
+    {% if exercises %}
+        {% for exercise in exercises %}
+            <a href="#">
+                <div class="exercise-line">
+                    {% if exercise.photo %}
+                    <img src="">
+                </div>
+            </a>
 
 </div>
 
