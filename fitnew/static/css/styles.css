@@ -84,9 +84,18 @@ font-size: 15px;
 
 .exercises-grid{
 display: grid;
+grid-template-columns: repeat(2, 1fr);
+gap: 20px;
+margin: 0 auto;
+max-width: 1200px;
 padding: 20px;
 }
 
-.exercise-line{
+.exercise-card{
 font-size: 15px;
+padding:15px;
+}
+
+.exercise-cover{
+
 }
