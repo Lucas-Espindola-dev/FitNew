@@ -8,7 +8,6 @@
         {% for exercise in exercises %}
         <div class="exercise-card">
             {% if exercise.photo %}
-            <div class="exercise-cover">
                 <a href="#">
                     <img src="{{ exercise.photo.url }}" alt="{{exercise.muscular_group}} - {{exercise.name_exercise}}">
                     {% else %}
@@ -16,7 +15,6 @@
                     {% endif %}
                     <p>{{ exercise.series }} series / {{ exercise.reps }}</p>
                 </a>
-            </div>
         </div>
     {% endfor %}
     {% else %}
