@@ -6,16 +6,18 @@
 <div class="exercises-grid">
     {% if exercises %}
         {% for exercise in exercises %}
-            <a href="#">
-                <div class="exercise-line">
-                    {% if exercise.photo %}
+        <div class="exercise-card">
+            {% if exercise.photo %}
+            <div class="exercise-cover">
+                <a href="#">
                     <img src="{{ exercise.photo.url }}" alt="{{exercise.muscular_group}} - {{exercise.name_exercise}}">
                     {% else %}
                         <p class="no-photo"> Foto não disponível </p>
                     {% endif %}
                     <p>{{ exercise.series }} series / {{ exercise.reps }}</p>
-                </div>
-            </a>
+                </a>
+            </div>
+        </div>
     {% endfor %}
     {% else %}
         <p class="no-results"> Nenhum Exercício encontrado! </p>
