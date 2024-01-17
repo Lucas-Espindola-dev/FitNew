@@ -92,10 +92,22 @@ padding: 20px;
 }
 
 .exercise-card{
-font-size: 15px;
+font-size: 30px;
 padding:15px;
+background-color:#e3e1e1;
+box-shadow: 0 2px 6px rgba(0, 0, 0, 0.2);
+border-radius: 10px;
+overflow: hidden;
+text-align: center;
+transition: all 0.3s ease;
 }
 
-.exercise-cover{
+.exercise-card:hover {
 
+}
+
+.exercise-card img{
+max-width: 100%;
+height: 200px;
+object-fit: cover;
 }
