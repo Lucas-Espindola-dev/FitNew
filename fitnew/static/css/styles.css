@@ -87,7 +87,15 @@ max-width: 800px;
 }
 
 .menu-muscular-groups nav{
+margin: 0 auto;
+background: #008FEA;
+box-shadow: 0 3px 15px rgba(0,0,0,.15);
+}
 
+.menu-muscular-groups nav::after{
+display: block;
+content:'';
+clear: both;
 }
 
 .exercises-grid{
