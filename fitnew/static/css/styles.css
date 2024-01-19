@@ -111,6 +111,16 @@ float: left;
 position: relative;
 }
 
+.menu-muscular-groups nav ul li a{
+display: block;
+color: rgba(255,255,255, .9)
+text-decoration: none;
+padding: 1rem 2rem;
+border-top: 2px solid transparent;
+border-bottom: 2px solid transparent;
+transition: all .4s ease-in-out;
+}
+
 .exercises-grid{
 display: grid;
 grid-template-columns: repeat(2, 1fr);
