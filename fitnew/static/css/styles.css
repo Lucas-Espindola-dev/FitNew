@@ -121,6 +121,16 @@ border-bottom: 2px solid transparent;
 transition: all .4s ease-in-out;
 }
 
+.menu-muscular-groups nav ul li a: hover,
+.menu-muscular-groups nav ul li a: focus{
+    background: rgba(0,0,0,.2)
+}
+
+.menu-muscular-groups nav ul li a: focus{
+    color: white;
+}
+
+
 .exercises-grid{
 display: grid;
 grid-template-columns: repeat(2, 1fr);
