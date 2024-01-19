@@ -85,6 +85,7 @@ font-size: 15px;
 
 .menu-muscular-groups{
 max-width: 800px;
+font-size: 20px;
 }
 
 .menu-muscular-groups nav{
@@ -97,6 +98,12 @@ box-shadow: 0 3px 15px rgba(0,0,0,.15);
 display: block;
 content:'';
 clear: both;
+}
+
+.menu-muscular-groups nav ul{
+padding: 0;
+margin: 0;
+list-style: none;
 }
 
 .exercises-grid{
