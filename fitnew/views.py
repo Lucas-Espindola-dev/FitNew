@@ -12,3 +12,8 @@ class ExercisesListView(ListView):
     template_name = 'fitnew/pages/exercises.html'
     context_object_name = 'exercises'
 
+    def get_queryset(self):
+        exercises = super().get_queryset().order_by('name_exercise')
+        muscular_groups = self.request.GET.get('muscular_group')
+
+
