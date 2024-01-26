@@ -13,7 +13,8 @@ class ExercisesListView(ListView):
     context_object_name = 'exercises'
 
     def get_queryset(self):
-        exercises = super().get_queryset().filter(muscular_group__id=self.kwargs['muscular_groups_id'])
+        exercises = super().get_queryset().filter(muscular_group__id=self.kwargs['muscular_groups_id']).order_by('-id')
+        return exercises
 
 
 class MuscularGroupsListView(ListView):
