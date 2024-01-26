@@ -12,6 +12,9 @@ class ExercisesListView(ListView):
     template_name = 'fitnew/pages/exercises.html'
     context_object_name = 'exercises'
 
+    def get_queryset(self):
+        exercises = super().get_queryset().filter(muscular_group__id=self.kwargs['muscular_groups_id'])
+
 
 class MuscularGroupsListView(ListView):
     model = MuscularGroup
