@@ -6,8 +6,8 @@
 
 <div class="muscular-groups-grid">
     {% for group in muscular_groups %}
-    <div class="musuclar-group-card">
-        <a>
+    <div class="muscular-group-card">
+        <a href="{% url 'fitnew:exercises' group.id %}">
             <h1>{{group.name}}</h1>
         </a>
     </div>
