@@ -4,5 +4,14 @@
 
 {% block content %}
 
+<div class="muscular-groups-grid">
+    {% for group in muscular_groups %}
+    <div class="musuclar-group-card">
+        <a>
+            <h1>{{group.name}}</h1>
+        </a>
+    </div>
+
+</div>
 
 {% endblock %}
