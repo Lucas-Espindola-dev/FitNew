@@ -1,4 +1,4 @@
-from fitnew.models import Exercises
+from fitnew.models import Exercises, MuscularGroup
 from django.views.generic import ListView
 from django.shortcuts import render
 
@@ -14,10 +14,7 @@ class ExercisesListView(ListView):
 
 
 class MuscularGroupsListView(ListView):
-    model = Exercises
+    model = MuscularGroup
     template_name = 'fitnew/pages/exercises.html'
     context_object_name = 'muscular_groups'
 
-    def get_queryset(self):
-
-        return
