@@ -1,4 +1,4 @@
-from fitnew.models import Exercises, MuscularGroup,Lists
+from fitnew.models import Exercises, MuscularGroup, Lists
 from django.views.generic import ListView
 from django.shortcuts import render
 
@@ -28,4 +28,6 @@ class ListsExercisesListview(ListView):
     template_name = 'fitnew/pages/exercises_lists.html'
     context_object_name = 'exercises_lists'
 
-
+    def get_queryset(self):
+        lists = super().get_queryset().order_by('list_name')
+        return lists
