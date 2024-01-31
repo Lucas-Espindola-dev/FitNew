@@ -1,5 +1,5 @@
 from django.contrib import admin
-from fitnew.models import MuscularGroup, Exercises
+from fitnew.models import MuscularGroup, Exercises, Lists
 
 
 class MuscularGroupsAdmin(admin.ModelAdmin):
@@ -14,3 +14,10 @@ class ExercisesGroupsAdmin(admin.ModelAdmin):
 
 
 admin.site.register(Exercises, ExercisesGroupsAdmin)
+
+
+class ListsAdmin(admin.ModelAdmin):
+    list_display = ('id', 'list_name')
+
+
+admin.site.register(Lists, ListsAdmin)
