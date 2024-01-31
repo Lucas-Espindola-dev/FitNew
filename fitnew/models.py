@@ -24,4 +24,6 @@ class Exercises(models.Model):
 
 
 class Lists(models.Model):
-    ...
+    id = models.AutoField(primary_key=True)
+    list_name = models.CharField(max_length=255)
+    exercises = models.ManyToManyField(Exercises)
