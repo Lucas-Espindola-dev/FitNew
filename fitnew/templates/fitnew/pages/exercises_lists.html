@@ -3,5 +3,14 @@
 {% block title %} Fichas de Treino {% endblock %}
 
 {% block content %}
+<div class="exercises-lists-grid">
+    {% for list in lists %}
+        <div class="exercises-lists-cards">
+            <a>
+                <h1>{{list.list_name}}</h1>
+            </a>
+        </div>
+    {% endfor %}
+</div>
 
 {% endblock %}
