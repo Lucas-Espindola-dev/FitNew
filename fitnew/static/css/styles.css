@@ -162,9 +162,12 @@ object-fit: cover;
 }
 
 .muscular-groups-grid{
-
+display: grid;
+grid-template-columns: auto auto;
+padding: 10px;
 }
 
 .muscular-group-card{
-
+text-align: center;
+padding: 5px;
 }
