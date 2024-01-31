@@ -1,4 +1,4 @@
-from fitnew.models import Exercises, MuscularGroup
+from fitnew.models import Exercises, MuscularGroup,Lists
 from django.views.generic import ListView
 from django.shortcuts import render
 
@@ -21,4 +21,9 @@ class MuscularGroupsListView(ListView):
     model = MuscularGroup
     template_name = 'fitnew/pages/muscular_groups.html'
     context_object_name = 'muscular_groups'
+
+
+class ListsExercisesListview(ListView):
+    model = Lists
+
 
