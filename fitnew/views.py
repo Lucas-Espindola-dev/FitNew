@@ -25,5 +25,7 @@ class MuscularGroupsListView(ListView):
 
 class ListsExercisesListview(ListView):
     model = Lists
+    template_name = 'fitnew/pages/exercises_lists.html'
+    context_object_name = 'exercises_lists'
 
 
